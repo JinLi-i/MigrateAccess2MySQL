@@ -110,7 +110,7 @@ int main(int argc, char *argv[])
 
     QSqlQuery *acceQuery,*mysqlQuery;
     QSqlDatabase Accedb = QSqlDatabase::addDatabase("QODBC","Access");
-    Accedb.setDatabaseName("DRIVER={Microsoft Access Driver (*.mdb)};FIL={MS Access};DBQ=record.mdb;UID=;PWD=0000");
+    Accedb.setDatabaseName("DRIVER={Microsoft Access Driver (*.mdb)};FIL={MS Access};DBQ=record.mdb;UID=;PWD=****");
     if(!Accedb.open())
     {
         qDebug() << "Failed to connect the Access database!";
@@ -126,7 +126,7 @@ int main(int argc, char *argv[])
     MySqldb.setPort(3306);
     MySqldb.setDatabaseName("Records");
     MySqldb.setUserName("root");
-    MySqldb.setPassword("3458");
+    MySqldb.setPassword("****");
     if(!MySqldb.open())
     {
         qDebug() << "Failed to connect the MySQL database!";
